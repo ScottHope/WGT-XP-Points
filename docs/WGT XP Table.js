@@ -17,8 +17,9 @@ document.addEventListener("DOMContentLoaded", function () {
 function buildDayList(x) {
   let table = document.getElementById("days");
   let dais = x.getElementsByTagName("level");
-  let head = "<tr><th>LEVEL</th><th>POINTS</th><th>DIFFERENCE</th></tr>";
+  let head = "<tr class=\"head\"><th>LEVEL</th><th>POINTS</th><th>DIFFERENCE</th></tr>";
   table.innerHTML = head;
+  let tbody = document.getElementsByTagName("tbody");
   for (let i = 0; i < dais.length; i++) {
     let level_1 = i === 0 ? 0 : dais[i - 1].getAttribute("xpRequired");
     let level = dais[i].getAttribute("id") * 1;
