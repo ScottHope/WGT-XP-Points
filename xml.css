@@ -1,0 +1,38 @@
+body{
+  background: #eee;
+  font-family: tahoma;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+}
+
+.accr{
+  width:310px;
+}
+
+table{
+  border-collapse: collapse;
+  font: 1rem tahoma;
+  text-align: right;
+  width: 40%;
+}
+
+th{
+  text-align:center;
+}
+
+tr:nth-child(10n){
+  background:rgb(255, 255, 255);
+}
+
+td{
+  border: 1px solid #000;
+  padding: 2px 10px;
+}
+
+tr:hover{
+  background: rgb(255, 221, 227);
+  transition:200ms 150ms ;
+}
