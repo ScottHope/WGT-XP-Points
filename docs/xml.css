@@ -18,6 +18,14 @@ body{
   position:absolute;
 }
 
+#date{
+  border:1px solid #000;
+  border-style:solid none;
+  text-align:center;
+  padding:3px;
+  background:#bbb;
+}
+
 table{
   border-collapse: collapse;
   font: 1rem tahoma;
