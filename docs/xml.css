@@ -1,5 +1,5 @@
 body{
-  background: #eee;
+  background: #aaa;
   font-family: tahoma;
   padding:0 20px;
 }
@@ -7,10 +7,15 @@ body{
 .container{
   display: flex;
   justify-content: center;
+  padding:50px;
 }
 
 .accr{
   width:310px;
+}
+
+.text{
+  position:absolute;
 }
 
 table{
@@ -23,6 +28,10 @@ table{
 
 th{
   text-align:center;
+}
+
+tr{
+  background:#ddd;
 }
 
 tr:nth-child(10n+1){
