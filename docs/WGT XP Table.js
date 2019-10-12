@@ -17,14 +17,13 @@ document.addEventListener("DOMContentLoaded", function () {
 function buildDayList(x) {
   let table = document.getElementById("days");
   let dais = x.getElementsByTagName("level");
-  let head = "<tr class=\"head\"><th>LEVEL</th><th>XP POINTS</th><th>DIFFERENCE</th></tr>";
+  let head = "<tr class=\"head\"><th>LEVEL</th><th>XP POINTS</th><th>XP TO LEVEL UP</th></tr>";
   table.innerHTML = head;
-  let tbody = document.getElementsByTagName("tbody");
   for (let i = 0; i < dais.length; i++) {
-    let level_1 = i === 0 ? 0 : dais[i - 1].getAttribute("xpRequired");
+    let nextxp = dais[i + 1] === undefined ? null : dais[i + 1].getAttribute("xpRequired");
     let level = dais[i].getAttribute("id") * 1;
     let xp = dais[i].getAttribute("xpRequired") * 1;
-    let diff = i === 0 ? undefined : (xp - level_1).toLocaleString();
+    let diff = nextxp - xp < 0 ? "∞" : (nextxp - xp).toLocaleString();
     let tr = document.createElement("tr");
     let td1 = document.createElement("td");
     td1.textContent = level;
