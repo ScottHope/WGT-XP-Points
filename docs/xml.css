@@ -56,3 +56,12 @@ tr:hover:not(.head){
   background: rgb(255, 221, 227);
   transition:200ms 150ms ;
 }
+
+@media screen and (max-width:1000px){
+  .text{
+    position: relative;
+    display:flex;
+    flex-flow: column;
+    align-items:center;
+  }
+}
