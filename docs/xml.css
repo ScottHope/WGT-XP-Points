@@ -30,8 +30,9 @@ table{
   border-collapse: collapse;
   font: 1rem tahoma;
   text-align: right;
-  width: 40%;
+  width: 30%;
   max-width:500px;
+  cursor:default;
 }
 
 th{
