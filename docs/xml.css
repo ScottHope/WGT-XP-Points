@@ -55,7 +55,7 @@ td, th{
 }
 
 tr:hover:not(.head){
-  background: rgb(255, 221, 227);
+  background: #ddf4ff;
   transition:100ms 150ms ;
 }
 
