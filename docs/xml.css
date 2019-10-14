@@ -37,6 +37,7 @@ table{
 
 th{
   text-align:center;
+  white-space: nowrap;
 }
 
 tr:not(.head){
