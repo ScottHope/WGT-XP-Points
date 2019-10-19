@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
       let parser = new DOMParser();
       let xml = parser.parseFromString(data, "application/xml");
       // document.getElementById("output").textContent = data;
-      console.log(xml);
+      // console.log(xml);
       buildDayList(xml);
     });
 })
