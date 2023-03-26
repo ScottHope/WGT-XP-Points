@@ -39,6 +39,9 @@ th{
   text-align:center;
   white-space: nowrap;
   padding:3px 10px;
+  position: sticky;
+  top: 0;
+  background: #fff;
 }
 
 tr:not(.head){
